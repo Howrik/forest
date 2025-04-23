@@ -77,11 +77,11 @@ body {
 	text-shadow: 0 0 15px #9d822b;
 }
 .layers__title {
-    font-size: clamp(1.875rem, 1.6435rem + 1.2346vw, 3.125rem);
+    font-size: clamp(1.5rem, 1.199rem + 1.605vw, 3.125rem);
 	letter-spacing: calc(var(--index) / 2.25);
 }
 .layers__caption {
-	font-size: clamp(2.5rem, 2.2685rem + 1.2346vw, 3.75rem);
+	font-size: clamp(1.75rem, 1.38rem + 1.975vw, 3.75rem);
 	letter-spacing: calc(var(--index) / 3.5);
 	margin-top: calc(var(--index) * -4.75);
 }
@@ -102,7 +102,7 @@ body {
 }
 .main-article__header {
 	text-transform: uppercase;
-	font-size: clamp(3.125rem, 3.125rem + 0vw, 3.125rem);
+	font-size: clamp(1.5rem, 1.199rem + 1.605vw, 3.125rem);
 	letter-spacing: calc(var(--index) / 7.5);
 	transform: var(--main-article-transform);
 	transition: var(--transition);
@@ -110,7 +110,7 @@ body {
 }
 .main-article__paragraph {
 	max-width: calc(var(--index) * 30);
-	font-size: clamp(1.75rem, 1.75rem + 0vw, 1.75rem);
+	font-size: clamp(1.688rem, 1.676rem + 0.062vw, 1.75rem);
 	margin-top: calc(var(--index) / 1.25);
 	transform: var(--main-article-transform);
 	transition: var(--transition);
@@ -123,6 +123,12 @@ body {
 	position: absolute;
 	bottom: calc(var(--index) * 2.5);
 	opacity: .45;
-	font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
+	font-size: clamp(0.75rem, 0.704rem + 0.247vw, 1rem);
 	letter-spacing: calc(var(--index) / 37.5);
+}
+
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .layers__caption { 	margin-top: calc(var(--index) * -10.75);
+    }
 }
